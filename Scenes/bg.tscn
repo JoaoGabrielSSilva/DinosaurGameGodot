@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://dosp8wlkpb2il"]
+
+[ext_resource type="Texture2D" uid="uid://dbhbdndi6eyna" path="res://assets/img/background/background.png" id="1_kj0gu"]
+[ext_resource type="Texture2D" uid="uid://bawko1y7jth7s" path="res://assets/img/background/floresta1.png" id="2_8u858"]
+[ext_resource type="Texture2D" uid="uid://b7phjdcwrbxec" path="res://assets/img/background/floresta2.png" id="3_skc7i"]
+[ext_resource type="Texture2D" uid="uid://w3qpa3glqqwp" path="res://assets/img/background/floresta3.png" id="4_nbn66"]
+[ext_resource type="Texture2D" uid="uid://djp70xqm0tcm5" path="res://assets/img/background/floresta4.png" id="5_se5co"]
+
+[node name="Bg" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kj0gu")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_8u858")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1152, 648)
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+texture = ExtResource("3_skc7i")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1152, 648)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+texture = ExtResource("4_nbn66")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1152, 648)
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+texture = ExtResource("5_se5co")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1152, 648)

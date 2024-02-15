@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdhrb0ietptaa"]
+
+[ext_resource type="PackedScene" uid="uid://dosp8wlkpb2il" path="res://Scenes/bg.tscn" id="1_npmgm"]
+[ext_resource type="PackedScene" uid="uid://b0i3gvceevawa" path="res://Scenes/chao.tscn" id="2_6i3xj"]
+[ext_resource type="PackedScene" uid="uid://bwndpkm1vqwl6" path="res://Scenes/player.tscn" id="3_kkj8s"]
+
+[node name="Principal" type="Node"]
+
+[node name="Bg" parent="." instance=ExtResource("1_npmgm")]
+
+[node name="Chao" parent="." instance=ExtResource("2_6i3xj")]
+
+[node name="Player" parent="." instance=ExtResource("3_kkj8s")]
+position = Vector2(209, 501)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(579, 324)
