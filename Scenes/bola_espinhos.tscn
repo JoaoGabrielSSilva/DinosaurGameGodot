@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1j0lxi50575e"]
+
+[ext_resource type="Texture2D" uid="uid://0kjgyw0uslnw" path="res://assets/img/obstacles/Spike_Ball (2).png" id="1_gkvxm"]
+
+[node name="BolaEspinhos" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gkvxm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(5, 1)
+polygon = PackedVector2Array(35, -97, 106, -113, 81, -62, 148, -1, 90, 34, 100, 104, 36, 94, -5, 149, -46, 94, -112.5, 106.1, -97, 44, -153, -2, -103, -35, -113.7, -110.5, -42, -98, -6, -154)

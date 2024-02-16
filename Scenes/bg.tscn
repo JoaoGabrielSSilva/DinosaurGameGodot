@@ -12,8 +12,16 @@
 texture = ExtResource("1_kj0gu")
 centered = false
 
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer5"]
+texture = ExtResource("1_kj0gu")
+centered = false
+
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0, 1)
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
 texture = ExtResource("2_8u858")
@@ -23,6 +31,7 @@ region_rect = Rect2(0, 0, 1152, 648)
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
 texture = ExtResource("3_skc7i")
@@ -32,6 +41,7 @@ region_rect = Rect2(0, 0, 1152, 648)
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
 texture = ExtResource("4_nbn66")
@@ -41,6 +51,7 @@ region_rect = Rect2(0, 0, 1152, 648)
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
 texture = ExtResource("5_se5co")

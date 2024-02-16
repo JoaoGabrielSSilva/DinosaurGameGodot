@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr8f8osmqrh1o"]
+
+[ext_resource type="Texture2D" uid="uid://dme56cpk1qycn" path="res://assets/img/obstacles/Tumbleweed.png" id="1_7tk3b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r8ij3"]
+radius = 95.0
+
+[node name="Mato" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7tk3b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r8ij3")

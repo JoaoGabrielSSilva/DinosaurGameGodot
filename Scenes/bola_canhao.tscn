@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1ar5b57q41mj"]
+
+[ext_resource type="Texture2D" uid="uid://bqwx80t8doyg7" path="res://assets/img/obstacles/Canonball.png" id="1_x33sg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uw2o5"]
+radius = 23.0217
+
+[node name="BolaCanhao" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x33sg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uw2o5")

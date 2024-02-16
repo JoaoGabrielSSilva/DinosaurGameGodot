@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://bdhrb0ietptaa"]
+[gd_scene load_steps=5 format=3 uid="uid://bdhrb0ietptaa"]
 
 [ext_resource type="PackedScene" uid="uid://dosp8wlkpb2il" path="res://Scenes/bg.tscn" id="1_npmgm"]
+[ext_resource type="Script" path="res://Scenes/principal.gd" id="1_tmpc4"]
 [ext_resource type="PackedScene" uid="uid://b0i3gvceevawa" path="res://Scenes/chao.tscn" id="2_6i3xj"]
 [ext_resource type="PackedScene" uid="uid://bwndpkm1vqwl6" path="res://Scenes/player.tscn" id="3_kkj8s"]
 
 [node name="Principal" type="Node"]
+script = ExtResource("1_tmpc4")
 
 [node name="Bg" parent="." instance=ExtResource("1_npmgm")]
 
@@ -14,4 +16,5 @@
 position = Vector2(209, 501)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+z_index = 200
 position = Vector2(579, 324)
