@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://p3sm03mfo7yk"]
+
+[ext_resource type="FontFile" uid="uid://d2muk705wwe3o" path="res://assets/fonts/PixelifySans-Regular.ttf" id="1_4014r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wp38i"]
+bg_color = Color(0.411765, 0.180392, 0.0235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0lfjy"]
+bg_color = Color(0.65098, 0.301961, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5cjjw"]
+bg_color = Color(0.298039, 0.121569, 0.0117647, 1)
+
+[node name="FimDeJogo" type="CanvasLayer"]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -27.0
+offset_right = 168.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_4014r")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_wp38i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0lfjy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5cjjw")
+text = "JOGAR 
+NOVAMENTE"
+icon_alignment = 1

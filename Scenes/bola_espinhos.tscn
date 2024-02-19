@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1j0lxi50575e"]
+[gd_scene load_steps=3 format=3 uid="uid://d1j0lxi50575e"]
 
 [ext_resource type="Texture2D" uid="uid://0kjgyw0uslnw" path="res://assets/img/obstacles/Spike_Ball (2).png" id="1_gkvxm"]
+[ext_resource type="Script" path="res://Scenes/bola_espinhos.gd" id="1_y41sg"]
 
 [node name="BolaEspinhos" type="Area2D"]
+script = ExtResource("1_y41sg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_gkvxm")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

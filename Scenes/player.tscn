@@ -93,14 +93,16 @@ size = Vector2(296, 376)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.4, 0.4)
 script = ExtResource("1_2y5s1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -90)
 sprite_frames = SubResource("SpriteFrames_vswy5")
-animation = &"correr"
+animation = &"parado"
 autoplay = "parado"
+frame = 2
+frame_progress = 0.0809636
 
 [node name="CorrendoColisao" type="CollisionShape2D" parent="."]
 position = Vector2(-28, -80)
