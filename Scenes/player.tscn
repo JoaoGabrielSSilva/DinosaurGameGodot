@@ -89,7 +89,7 @@ animations = [{
 size = Vector2(296, 458)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_duu85"]
-size = Vector2(296, 376)
+size = Vector2(296, 289.5)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
@@ -99,15 +99,14 @@ script = ExtResource("1_2y5s1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -90)
 sprite_frames = SubResource("SpriteFrames_vswy5")
-animation = &"parado"
+animation = &"agachar"
 autoplay = "parado"
-frame = 2
-frame_progress = 0.0809636
 
 [node name="CorrendoColisao" type="CollisionShape2D" parent="."]
 position = Vector2(-28, -80)
 shape = SubResource("RectangleShape2D_7f2ab")
 
 [node name="AgachaColisao" type="CollisionShape2D" parent="."]
-position = Vector2(-28, -36)
+position = Vector2(-28, 7.25)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_duu85")

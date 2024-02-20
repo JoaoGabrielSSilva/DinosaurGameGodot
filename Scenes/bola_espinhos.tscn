@@ -7,9 +7,10 @@
 script = ExtResource("1_y41sg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_gkvxm")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(5, 1)
-polygon = PackedVector2Array(35, -97, 106, -113, 81, -62, 148, -1, 90, 34, 100, 104, 36, 94, -5, 149, -46, 94, -112.5, 106.1, -97, 44, -153, -2, -103, -35, -113.7, -110.5, -42, -98, -6, -154)
+position = Vector2(13.5563, -13.6985)
+scale = Vector2(0.449673, 0.4072)
+polygon = PackedVector2Array(3.2105, -54.7678, 56.5826, -62.1352, 54.3588, -3.19616, 85.4925, 36.0965, 52.135, 75.3893, 56.5826, 124.505, 0.98666, 122.049, -30.1471, 161.342, -60.3927, 122.373, -112.429, 126.961, -110.205, 68.0219, -148.011, 33.6408, -107.981, -0.740364, -125.772, -67.0468, -63.5047, -57.2236, -30.1471, -96.5163)

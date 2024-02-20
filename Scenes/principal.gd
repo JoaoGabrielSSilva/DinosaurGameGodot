@@ -85,7 +85,7 @@ func _process(delta):
 		
 	else:
 		$Player.get_node("AnimatedSprite2D").play(&"parado", 1)
-		if Input.is_action_pressed("ui_accept"):
+		if Input.is_action_pressed("pular"):
 			jogo_rodando = true
 			$HUD.get_node("LabelIniciar").text = ""
 

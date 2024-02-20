@@ -8,9 +8,9 @@ func _physics_process(delta):
 	
 	if is_on_floor():
 		$CorrendoColisao.disabled = false
-		if Input.is_action_pressed("ui_accept"):
+		if Input.is_action_pressed("pular"):
 			velocity.y = VELOCIDADE_PULO
-		elif Input.is_action_pressed("ui_down"):
+		elif Input.is_action_pressed("agachar"):
 			$AnimatedSprite2D.play("agachar")
 			$CorrendoColisao.disabled = true
 		else: 
